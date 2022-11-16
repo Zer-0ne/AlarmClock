@@ -63,11 +63,8 @@ def alarm(set_alarm_timer):
         time()
         sleep(1)
         if now == set_alarm_timer:
-            # file = 'fajar_alarm.mp3'
-            # playsound(os.system('fajar_alarm.mp3'))
             playsound.playsound('/mnt/1A10343510341A69/sahil/my C language/Python/MyPractice/gui/alram/gun.mp3')
             messagebox.showinfo('Time up','Time up!!')
-            # os.startfile('fajar_alarm.mp3')
             break
 
 def actual_time():
@@ -80,34 +77,6 @@ def actual_time():
         set_alarm_timer = f'{hour.get()}:{min.get()}:{sec.get()}'
         alarm(set_alarm_timer)
         time()
-
-# def difference(set_alarm_timer):
-      
-#     # convert h1 : m1 into
-#     # minutes
-#     t1 = datetime.datetime.now()
-#     t2 = actual_time()
-#     # set = h1 * 60 + m1
-      
-#     # convert h2 : m2 into
-#     # minutes 
-#     # t2 = h2 * 60 + m2
-      
-#     # if (t1 == t2): 
-#     #     print("Both are same times")
-#     #     return 
-#     # else:
-          
-#     #     # calculating the difference
-#     diff = t2-t1
-          
-#     # # calculating hours from
-#     # # difference
-#     # h = (int(diff / 60)) % 24
-      
-#     # # calculating minutes from 
-#     # # difference
-#     # m = diff % 60
 
 hour = StringVar()
 min = StringVar()
